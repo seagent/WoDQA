@@ -54,7 +54,7 @@ public class QueryAnalyzerTest extends AbstractWoDQAComponentsTest {
 				+ "?airport owl:sameAs ?dbpediaAirport."
 				+ "?dbpediaAirport ?props ?values." + "}";
 		Model mainModel = mergeModels(dbpediaVOID, geodataVOID);
-		QueryAnalyzer analyzer = new QueryAnalyzer(mainModel);
+		QueryAnalyzer analyzer = new QueryAnalyzer(mainModel, false);
 		List<VOIDPathSolution> voidPathSolutionList = analyzer.analyze(query);
 		assertEquals(7, voidPathSolutionList.size());
 

@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 import java.util.List;
 import java.util.Vector;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
@@ -17,6 +18,7 @@ import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.query.Query;
 
+@Ignore
 public class OptimizerTest {
 	public static final String DSI_LOD = "http://dsi.lod-cloud.net/sparql";
 	private static final String KEGG_ENDPOINT = "http://kegg.bio2rdf.org/sparql";
@@ -43,24 +45,18 @@ public class OptimizerTest {
 			System.out.println(teMatch.getTriple() + " Endpoint:"
 					+ teMatch.getVOIDPathSolution().getAllEndpoints().get(0));
 		}
-		assertEquals(
-				rtMatch.get(0).getVOIDPathSolution().getAllEndpoints().get(0),
-				LODSZTAKI_ENDPOINT);
-		assertEquals(
-				rtMatch.get(1).getVOIDPathSolution().getAllEndpoints().get(0),
-				DBPEDIA_ENDPOINT);
-		assertEquals(
-				rtMatch.get(2).getVOIDPathSolution().getAllEndpoints().get(0),
-				SEMANTICEUROPA_ENDPOINT);
-		assertEquals(
-				rtMatch.get(3).getVOIDPathSolution().getAllEndpoints().get(0),
-				KEGG_ENDPOINT);
-		assertEquals(
-				rtMatch.get(4).getVOIDPathSolution().getAllEndpoints().get(0),
-				LINKEDGEODATA_ENDPOINT);
-		assertEquals(
-				rtMatch.get(5).getVOIDPathSolution().getAllEndpoints().get(0),
-				GEOLINKEDDATA_ENDPOINT);
+		assertEquals(rtMatch.get(0).getVOIDPathSolution().getAllEndpoints()
+				.get(0), LODSZTAKI_ENDPOINT);
+		assertEquals(rtMatch.get(1).getVOIDPathSolution().getAllEndpoints()
+				.get(0), DBPEDIA_ENDPOINT);
+		assertEquals(rtMatch.get(2).getVOIDPathSolution().getAllEndpoints()
+				.get(0), SEMANTICEUROPA_ENDPOINT);
+		assertEquals(rtMatch.get(3).getVOIDPathSolution().getAllEndpoints()
+				.get(0), KEGG_ENDPOINT);
+		assertEquals(rtMatch.get(4).getVOIDPathSolution().getAllEndpoints()
+				.get(0), LINKEDGEODATA_ENDPOINT);
+		assertEquals(rtMatch.get(5).getVOIDPathSolution().getAllEndpoints()
+				.get(0), GEOLINKEDDATA_ENDPOINT);
 	}
 
 	@Test

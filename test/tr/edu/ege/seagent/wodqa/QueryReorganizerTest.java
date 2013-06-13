@@ -115,7 +115,7 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	@Test
 	public void dontSplitTriplePatternsHaveOneEndpointWhenTheyHaveExternalTest()
 			throws Exception {
-		String query = "SELECT * WHERE {  ?s ?p ?o.   ?x ?y ?z. }";
+		String query = "SELECT * WHERE {  ?s ?p ?o.   ?s ?y ?z. }";
 		List<VOIDPathSolution> voidPathSolutionList = new Vector<VOIDPathSolution>();
 		VOIDPathSolution vp1 = new VOIDPathSolution();
 		vp1.addEndpoint(DBPEDIA_ENDPOINT);
@@ -130,8 +130,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 		String federatedQuery = reorganizer.reorganizeWholeQuery(
 				voidPathSolutionList, query);
 		System.out.println(federatedQuery);
-		assertEquals(33, federatedQuery.indexOf(SERVICE));
-		assertEquals(-1, federatedQuery.indexOf(SERVICE, 34));
+		assertEquals(30, federatedQuery.indexOf(SERVICE));
+		assertEquals(-1, federatedQuery.indexOf(SERVICE, 31));
 
 	}
 
@@ -666,9 +666,9 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 		String tp3 = "?s ?p \"1946\"";
 		String tp4 = "<http://dbpedia.org/resource/Steven_Spielberg> <http://www.w3.org/2002/07/owl#sameAs> ?o2";
 		String tp5 = "<http://dbpedia.org/resource/Steven_Spielberg> ?p \"1946\"";
-		String tp6 = "<http://dbpedia.org/resource/Steven_Spielberg> ?p ?o4";
-		String tp7 = "<http://dbpedia.org/resource/Steven_Spielberg> ?p <http://dbpedia.org/resource/Firelight_(1964_film)>";
-		String tp8 = "?s <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Steven_Spielberg>";
+		String tp6 = "<http://dbpedia.org/resource/Steven_Spielberg> ?p ?o2";
+		String tp7 = "<http://dbpedia.org/resource/Steven_Spielberg> ?x <http://dbpedia.org/resource/Firelight_(1964_film)>";
+		String tp8 = "?x <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Steven_Spielberg>";
 		String rawQuery = "SELECT * WHERE {" + tp1 + DOT + tp2 + DOT + tp3
 				+ DOT + tp4 + DOT + tp5 + DOT + tp6 + DOT + tp7 + DOT + tp8
 				+ DOT + "}";
@@ -725,20 +725,19 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 				generateList(tp7, tp8),
 				generateList(tp1, tp2, tp3, tp4, tp5, tp6));
 
-		// check for DBPEDIA endpoint and triple block
-		checkEndpointAndTriples(generateList(DBPEDIA_ENDPOINT),
-				generateList(serviceNodeList.get(1).getURI()),
-				serviceTripleBlockList.get(1).toString(),
-				generateList(tp1, tp2, tp3),
-				generateList(tp4, tp5, tp6, tp7, tp8));
-
 		// check for LGDO endpoint and triple block
 		checkEndpointAndTriples(generateList(LGDO_ENDPOINT),
-				generateList(serviceNodeList.get(2).getURI()),
-				serviceTripleBlockList.get(2).toString(),
+				generateList(serviceNodeList.get(1).getURI()),
+				serviceTripleBlockList.get(1).toString(),
 				generateList(tp4, tp5, tp6),
 				generateList(tp1, tp2, tp3, tp7, tp8));
 
+		// check for DBPEDIA endpoint and triple block
+		checkEndpointAndTriples(generateList(DBPEDIA_ENDPOINT),
+				generateList(serviceNodeList.get(2).getURI()),
+				serviceTripleBlockList.get(2).toString(),
+				generateList(tp1, tp2, tp3),
+				generateList(tp4, tp5, tp6, tp7, tp8));
 	}
 
 	@Test
@@ -1051,8 +1050,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 		// generate raw query
 		String tp1 = "?s ?p ?o";
 		String tp2 = "?x ?y ?z";
-		String tp3 = "?q ?w ?e";
-		String tp4 = "?j ?k ?l";
+		String tp3 = "?o ?w ?e";
+		String tp4 = "?z ?k ?l";
 		String query = "SELECT * WHERE {" + tp1 + DOT + tp2 + DOT + tp3 + DOT
 				+ tp4 + DOT + "}";
 		// generate void path solutions
@@ -1222,12 +1221,12 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	public void filterInUnionQuerytest() throws Exception {
 		String query = "prefix foaf: <http://xmlns.com/foaf/0.1/> Select * where { {?s foaf:name ?l.} UNION {?s ?p ?o} FILTER regex(?l, \"web\", \"i\")  }";
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
-		assertTrue(167 <= federatedQuery
+		assertTrue(165 <= federatedQuery
 				.indexOf("FILTER regex(?l, \"web\", \"i\")"));
 
 	}
@@ -1236,8 +1235,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	public void limitandOffsetKeywordTest() throws Exception {
 		String query = "prefix foaf: <http://xmlns.com/foaf/0.1/> Select * where { {?s foaf:name ?l. ?s ?p ?o} FILTER (?p!=<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) } LIMIT 20 OFFSET 20";
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		assertTrue(federatedQuery.contains("OFFSET 20"));
@@ -1271,8 +1270,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 		String query = "prefix foaf: <http://xmlns.com/foaf/0.1/> Select * where { {?s foaf:name ?l. ?s ?p ?o} FILTER (?p!=<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) }";
 		System.out.println(QueryFactory.create(query).serialize());
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		assertFalse(federatedQuery.contains("rdf:type"));
@@ -1282,8 +1281,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	public void reorganizeFilterQueryTest() throws Exception {
 		String query = "prefix foaf: <http://xmlns.com/foaf/0.1/> Select * Where {?s foaf:name ?l. ?s ?p ?o. FILTER (?l=\"Ennio Morricone\"@en)  } ";
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
@@ -1296,8 +1295,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	public void reorganizeFilterRegexPatternTest() throws Exception {
 		String query = "PREFIX  dc:  <http://purl.org/dc/elements/1.1/> SELECT  ?title WHERE   { { ?x dc:title ?title } FILTER regex(?title, \"web\", \"i\" ) } LIMIT 20";
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
@@ -1345,17 +1344,17 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 		Model mainModel = mergeModels(createDBpediaVOID(), createGeodataVOID(),
 				VOIDCreator.createVOID("http://anyendpoint.org/sparql",
 						"http://querySolution/anyVOID"));
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
 		assertTrue(federatedQuery
+				.contains("{ BIND(<http://linkedgeodata.org/sparql> AS ?ser"));
+		assertTrue(federatedQuery
 				.contains("{ BIND(<http://dbpedia.org/sparql> AS ?ser"));
 		assertTrue(federatedQuery
-				.contains("UNION { BIND(<http://linkedgeodata.org/sparql> AS ?ser"));
-		assertTrue(federatedQuery
-				.contains("UNION { BIND(<http://anyendpoint.org/sparql> AS ?ser"));
+				.contains("{ BIND(<http://anyendpoint.org/sparql> AS ?ser"));
 	}
 
 	@Test
@@ -1382,10 +1381,10 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 				+ QueryVocabulary.GEODATA_URISPACE
 				+ ">"
 				+ "PREFIX dbpedia: <http://dbpedia.org/resource>"
-				+ "Select * WHERE { SERVICE <http://dbpedia.org/sparql> {dbpedia:Istanbul ?p ?o.} geodata:122 ?x ?z.  }";
+				+ "Select * WHERE { SERVICE <http://dbpedia.org/sparql> {dbpedia:Istanbul ?p ?o.} geodata:node424313451 ?x ?z.  }";
 		Model mainModel = mergeModels(createDBpediaVOID(), createGeodataVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
@@ -1397,10 +1396,10 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	public void reorganizeServiceQueryTripleFromSameEndpointTest()
 			throws Exception {
 		String query = "PREFIX dbpedia: <http://dbpedia.org/resource/>"
-				+ "Select * WHERE { SERVICE <http://dbpedia.org/sparql> {?s ?p ?o.} dbpedia:122 ?y ?z.  }";
+				+ "Select * WHERE { SERVICE <http://dbpedia.org/sparql> {?s ?p ?o.} dbpedia:Izmir ?y ?o.  }";
 		Model mainModel = mergeModels(createDBpediaVOID(), createGeodataVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
@@ -1410,8 +1409,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	@Test
 	public void reorganizeSimpleQuery() throws Exception {
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(QueryExampleVocabulary.SIMPLE_DBPEDIA_QUERY);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(QueryExampleVocabulary.SIMPLE_DBPEDIA_QUERY);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				QueryExampleVocabulary.SIMPLE_DBPEDIA_QUERY);
 		System.out.println(federatedQuery);
@@ -1425,38 +1424,39 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 				+ QueryVocabulary.GEODATA_URISPACE
 				+ ">"
 				+ "PREFIX dbpedia: <http://dbpedia.org/resource/>"
-				+ "Select * WHERE { dbpedia:Istanbul ?p ?o. geodata:454 ?a ?b. dbpedia:122 ?y ?z.  }";
+				+ "Select * WHERE { dbpedia:Istanbul ?p ?o. geodata:454 ?a ?b. dbpedia:122 ?y ?o.  }";
 		Model mainModel = mergeModels(createDBpediaVOID(), createGeodataVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
-		assertTrue(federatedQuery.indexOf("<http://dbpedia.org/sparql>",
-				federatedQuery.indexOf("<http://linkedgeodata.org/sparql>")) != -1);
+		assertTrue(federatedQuery.indexOf("<http://dbpedia.org/sparql>") != -1);
+		assertTrue(federatedQuery.indexOf("<http://linkedgeodata.org/sparql>") != -1);
 	}
 
 	@Test
 	public void reorganizeUnionQueryWithMultipleServiceTest() throws Exception {
 		Model mainModel = mergeModels(createDBpediaVOID(), createGeodataVOID());
 		String query = "Select * where { {<http://dbpedia.org/resource/Istanbul> ?p ?o} UNION {<http://dbpedia.org/resource/Istanbul> ?x ?o. ?s ?p ?z } }";
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
-		assertTrue(federatedQuery.indexOf(BIND) > 212);
+		assertTrue(federatedQuery.indexOf(BIND) > 209);
 	}
 
 	@Test
 	public void reorganizeUnionTest() throws Exception {
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false)
 				.analyze(QueryExampleVocabulary.reasonableDBPediaUnionQuery);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				QueryExampleVocabulary.reasonableDBPediaUnionQuery);
 		System.out.println(federatedQuery);
-		assertTrue(federatedQuery.indexOf("UNION") > 166);
+		assertTrue(federatedQuery.indexOf("UNION") > 164);
 		assertTrue(federatedQuery.indexOf(SERVICE, 180) == -1);
 	}
 
@@ -1464,8 +1464,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 	public void reorganizeUnknownOptionalTripleQueryTest() throws Exception {
 		String query = "SELECT * WHERE { <http://dbpedia.org/resource/Istanbul> ?p ?o.   OPTIONAL {   ?x ?y ?z. } }";
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println(federatedQuery);
@@ -1491,7 +1491,7 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 		String federatedQuery = reorganizer.reorganizeWholeQuery(
 				voidPathSolutionList, query);
 		System.out.println(federatedQuery);
-		assertEquals(301, federatedQuery.indexOf(SERVICE, 200));
+		assertEquals(294, federatedQuery.indexOf(SERVICE, 200));
 	}
 
 	@Test
@@ -1501,8 +1501,8 @@ public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 				+ "UNION" + "{ ?s <http://xmlns.com/foaf/0.1/name> ?l }"
 				+ "FILTER regex(?l, \"Burak\", \"i\")" + "}" + "LIMIT   20";
 		Model mainModel = mergeModels(createDBpediaVOID());
-		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel)
-				.analyze(query);
+		List<VOIDPathSolution> voidPathList = new QueryAnalyzer(mainModel,
+				false).analyze(query);
 		String federatedQuery = reorganizer.reorganizeWholeQuery(voidPathList,
 				query);
 		System.out.println("\n" + federatedQuery);

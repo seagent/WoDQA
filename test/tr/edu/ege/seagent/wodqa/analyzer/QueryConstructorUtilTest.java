@@ -3,6 +3,7 @@ package tr.edu.ege.seagent.wodqa.analyzer;
 import java.util.List;
 import java.util.Vector;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import tr.edu.ege.seagent.wodqa.query.analyzer.QueryConstructorUtil;
@@ -12,6 +13,7 @@ import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryFactory;
 
+@Ignore
 public class QueryConstructorUtilTest {
 
 	@Test
