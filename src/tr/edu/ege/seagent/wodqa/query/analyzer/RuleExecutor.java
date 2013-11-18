@@ -240,7 +240,7 @@ public class RuleExecutor {
 	private ExternalDatasetsForTriples executeExternalObjectSharingTriplesRule(
 			RelevantDatasetsForTriple triplePack1,
 			RelevantDatasetsForTriple triplePack2) {
-		logger.info("Executing external object sharing triples rule...");
+		logger.debug("Executing external object sharing triples rule...");
 		long before = System.currentTimeMillis();
 		List<Resource> referrerDatasets1 = new Vector<Resource>();
 		List<Resource> referrerDatasets2 = new Vector<Resource>();
@@ -285,7 +285,7 @@ public class RuleExecutor {
 				referrerDatasets2, triplePack2);
 
 		long after = System.currentTimeMillis();
-		logger.info(MessageFormat.format(
+		logger.debug(MessageFormat.format(
 				"Object sharing triples rule executed in \"{0}\" miliseconds",
 				after - before));
 		return new ExternalDatasetsForTriples(referrerDatasets1,
@@ -382,7 +382,7 @@ public class RuleExecutor {
 			RelevantDatasetsForTriple triplePack1,
 			RelevantDatasetsForTriple triplePack2)
 			throws VOIDDescriptionConsistencyException {
-		logger.info("Executing external chaining triples rule...");
+		logger.debug("Executing external chaining triples rule...");
 		long before = System.currentTimeMillis();
 		List<Resource> properReferencedDatasets = new Vector<Resource>();
 		List<Resource> properReferrerDatasets = new Vector<Resource>();
@@ -418,7 +418,7 @@ public class RuleExecutor {
 			exec.close();
 		}
 		long after = System.currentTimeMillis();
-		logger.info(MessageFormat
+		logger.debug(MessageFormat
 				.format("External chaining triples rule executed in \"{0}\" miliseconds",
 						after - before));
 		return new ExternalDatasetsForTriples(properReferrerDatasets,
@@ -493,7 +493,7 @@ public class RuleExecutor {
 	 */
 	private List<Resource> executeExternalLinksToURIRule(Triple triplePattern,
 			List<Resource> internalMatchedDatasets) {
-		logger.info("Executing external links to URI rule...");
+		logger.debug("Executing external links to URI rule...");
 		long before = System.currentTimeMillis();
 		List<Resource> relatedDatasets = new Vector<Resource>();
 		if (triplePattern.getPredicate().isURI()) {
@@ -526,7 +526,7 @@ public class RuleExecutor {
 			exec.close();
 		}
 		long after = System.currentTimeMillis();
-		logger.info(MessageFormat.format(
+		logger.debug(MessageFormat.format(
 				"External links to URI rule executed in \"{0}\" miliseconds",
 				after - before));
 		return relatedDatasets;
@@ -575,11 +575,11 @@ public class RuleExecutor {
 	private List<Resource> executeInternalLinksToURIRule(String objectURI,
 			RelevantDatasetsForTriple triplePack)
 			throws WrongVOIDEntityConstructionException {
-		logger.info("Executing internal links to URI rule...");
+		logger.debug("Executing internal links to URI rule...");
 		long before = System.currentTimeMillis();
 		List<Resource> datasets = searchURISpaceOfURI(objectURI, triplePack);
 		long after = System.currentTimeMillis();
-		logger.info(MessageFormat
+		logger.debug(MessageFormat
 				.format("Executing internal links to URI rule executed in \"{0}\" miliseconds",
 						after - before));
 		return datasets;
@@ -595,11 +595,11 @@ public class RuleExecutor {
 	private List<Resource> executeInternalURILinksToRule(String subjectURI,
 			RelevantDatasetsForTriple triplePack)
 			throws WrongVOIDEntityConstructionException {
-		logger.info("Executing internal URI links to rule...");
+		logger.debug("Executing internal URI links to rule...");
 		long before = System.currentTimeMillis();
 		List<Resource> datasets = searchURISpaceOfURI(subjectURI, triplePack);
 		long after = System.currentTimeMillis();
-		logger.info(MessageFormat
+		logger.debug(MessageFormat
 				.format("Executing internal URI links to rule executed in \"{0}\" miliseconds",
 						after - before));
 		return datasets;
@@ -729,7 +729,7 @@ public class RuleExecutor {
 	 * @return
 	 */
 	private List<Resource> executeVocabularyMatchRule(String searchedVoc) {
-		logger.info("Executing vocabulary match rule...");
+		logger.debug("Executing vocabulary match rule...");
 		long before = System.currentTimeMillis();
 		String query = QueryVocabulary.VOID_PREFIX_URI
 				+ QueryVocabulary.RDF_PREFIX_URI
@@ -751,7 +751,7 @@ public class RuleExecutor {
 		}
 		execution.close();
 		long after = System.currentTimeMillis();
-		logger.info(MessageFormat.format(
+		logger.debug(MessageFormat.format(
 				"Vocabulary match rule executed in \"{0}\" miliseconds", after
 						- before));
 		return relatedDatasets;

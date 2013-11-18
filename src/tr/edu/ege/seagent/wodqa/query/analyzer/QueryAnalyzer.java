@@ -158,7 +158,7 @@ public class QueryAnalyzer {
 	public QueryAnalyzer(Model mainModel, boolean askOpt) {
 		this.mainModel = mainModel;
 		this.askOptimization = askOpt;
-		logger.setLevel(Level.TRACE);
+//		logger.setLevel(Level.TRACE);
 	}
 
 	/**
@@ -364,7 +364,7 @@ public class QueryAnalyzer {
 		Literal literalTriple = ResourceFactory
 				.createPlainLiteral(convertedTriple.toString());
 		mainModel.add(dataset, CACHE_DOESNT_INCLUDE_PRP, literalTriple);
-		// logger.info(MessageFormat
+		// logger.debug(MessageFormat
 		// .format("\"{0}\" triple doesn't exist in \"{1}\" dataset and added to the main model as \"{2}\" format.",
 		// rdft.getTriple(), dataset, literalTriple));
 	}
@@ -382,7 +382,7 @@ public class QueryAnalyzer {
 		Literal literalTriple = ResourceFactory
 				.createPlainLiteral(convertedTriple.toString());
 		mainModel.add(dataset, CACHE_INCLUDES_PRP, literalTriple);
-		// logger.info(MessageFormat
+		// logger.debug(MessageFormat
 		// .format("\"{0}\" triple is exist in \"{1}\" dataset and added to the main model as \"{2}\" format.",
 		// rdft.getTriple(), dataset, literalTriple));
 	}
@@ -438,7 +438,7 @@ public class QueryAnalyzer {
 			if (!isVirtualDataset(endpointURL)
 					&& !areAllNodesVariables(rdft.getTriple())) {
 				if (doesDatasetContainTriple(dataset, rdft.getTriple())) {
-					logger.info(MessageFormat
+					logger.debug(MessageFormat
 							.format("Triple \"{0}\" is contained in model, and won't be asked to the service",
 									rdft.getTriple()));
 				} else if (doesDatasetNotContainTriple(dataset,
@@ -446,7 +446,7 @@ public class QueryAnalyzer {
 					rdft.getCurrentRelevantDatasets().set(i,
 							ResourceFactory.createResource());
 					rdft.getCurrentRelevantTypes().set(i, RelevantType.EMPTY);
-					logger.info(MessageFormat
+					logger.debug(MessageFormat
 							.format("Triple \"{0}\" is doesn't contained in model, and won't be asked to the service",
 									rdft.getTriple()));
 				} else {
@@ -482,7 +482,7 @@ public class QueryAnalyzer {
 				QueryElementOperations.convertTripleToString(rdft.getTriple()),
 				endpointURL);
 		long afterAsk = System.currentTimeMillis();
-		logger.info(MessageFormat.format(
+		logger.debug(MessageFormat.format(
 				"Asking to \"{0}\" service longed \"{1}\" seconds",
 				endpointURL, afterAsk - beforeAsk));
 
@@ -646,7 +646,7 @@ public class QueryAnalyzer {
 			for (int index = 0; index < triplePackList.size(); index++) {
 				RelevantDatasetsForTriple rdft = triplePackList.get(index);
 				if (!rdft.isAllRelated()) {
-					logger.info(MessageFormat
+					logger.debug(MessageFormat
 							.format("Triple pattern\"{0}\" is asking to the services... ",
 									rdft.getTriple()));
 					// ask triple to all relevant datasets
@@ -675,6 +675,8 @@ public class QueryAnalyzer {
 	 */
 	private void executeRepetitiveAnalysis(RuleExecutor executor)
 			throws VOIDDescriptionConsistencyException {
+		logger.info("Executing repetitive step analysis...");
+		long beforeRepetitiveStep = System.currentTimeMillis();
 		List<Integer> relevantDatasetsSizeBefore;
 		List<Integer> relevantDatasetsSizeAfter;
 		for (int i = 0; i < triplePackList.size(); i++) {
@@ -695,6 +697,10 @@ public class QueryAnalyzer {
 			if (firstChangedTripleIndex > -1)
 				i = firstChangedTripleIndex - 1;
 		}
+		long afterRepetitiveStep = System.currentTimeMillis();
+		logger.info(MessageFormat
+				.format("Repetitive step analysis has been executed in \"{0}\" miliseconds...",
+						afterRepetitiveStep - beforeRepetitiveStep));
 	}
 
 	/**
@@ -734,12 +740,18 @@ public class QueryAnalyzer {
 
 		RuleExecutor executor = new RuleExecutor(mainModel);
 		// execute single step analysis for each triple pattern...
+		logger.info("Executing single step analysis...");
+		long beforeSingleStep = System.currentTimeMillis();
 		for (int i = 0; i < getTriplePatternList().size(); i++) {
 			RelevantDatasetsForTriple triplePack = new RelevantDatasetsForTriple(
 					getTriplePatternList().get(i));
 			triplePackList.add(triplePack);
 			executor.executeSingleStepRules(triplePack);
 		}
+		long afterSingleStep = System.currentTimeMillis();
+		logger.info(MessageFormat
+				.format("Single step analysis has been executed in \"{0}\" miliseconds...",
+						afterSingleStep - beforeSingleStep));
 
 		// fill the void path list...
 		showAllAvailableDatasetList();
@@ -799,11 +811,17 @@ public class QueryAnalyzer {
 			List<Triple> triplesInFirstBlock = discoverTripleInQuery(unionBlocks
 					.get(i));
 			// examine proper void fileS for each triple pattern...
+			logger.info("Executing single step analysis...");
+			long beforeSingleStep = System.currentTimeMillis();
 			for (int x = 0; x < triplesInFirstBlock.size(); x++) {
 				triplePackList.add(new RelevantDatasetsForTriple(
 						getTriplePatternList().get(x)));
 				executor.executeSingleStepRules(triplePackList.get(x));
 			}
+			long afterSingleStep = System.currentTimeMillis();
+			logger.info(MessageFormat
+					.format("Single step analysis has been executed in \"{0}\" miliseconds...",
+							afterSingleStep - beforeSingleStep));
 
 			// print relevant dataset count
 			// printRelevantDatasetCount("Tek Adim Analizden Sonra:");

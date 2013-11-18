@@ -3,6 +3,7 @@ package tr.edu.ege.seagent.wodqa.query;
 import java.util.List;
 import java.util.Vector;
 
+import tr.edu.ege.seagent.boundarq.filterbound.QueryEngineFilter;
 import tr.edu.ege.seagent.dataset.crawler.VoidCrawler;
 import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
 import tr.edu.ege.seagent.wodqa.exception.QueryAnalyzerException;
@@ -18,16 +19,19 @@ import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.sparql.core.DatasetImpl;
 
-import extendingconcepts.filterbound.QueryEngineFilter;
+import core.Querier;
 
 public class WodqaEngine {
 
 	private String federatedQuery;
+	private Querier querier;
 
 	public WodqaEngine() {
 		super();
 		QueryEngineFilter.register();
+		querier = new Querier();
 	}
 
 	public WodqaEngine(boolean nestedLoop) {
@@ -35,6 +39,39 @@ public class WodqaEngine {
 		if (!nestedLoop) {
 			QueryEngineFilter.register();
 		}
+		querier = new Querier();
+	}
+
+	public ResultSet select(Model mainModel, String simpleQuery, boolean askOpt)
+			throws QueryHeaderException, InactiveEndpointException, Exception {
+		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
+		return querier.select(federatedQuery,
+				new DatasetImpl(ModelFactory.createDefaultModel()));
+
+	}
+
+	public Model construct(Model mainModel, String simpleQuery, boolean askOpt)
+			throws QueryHeaderException, InactiveEndpointException, Exception {
+		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
+		return querier.construct(federatedQuery,
+				new DatasetImpl(ModelFactory.createDefaultModel()));
+
+	}
+
+	public Model describe(Model mainModel, String simpleQuery, boolean askOpt)
+			throws QueryHeaderException, InactiveEndpointException, Exception {
+		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
+		return querier.describe(federatedQuery,
+				new DatasetImpl(ModelFactory.createDefaultModel()));
+
+	}
+
+	public boolean ask(Model mainModel, String simpleQuery, boolean askOpt)
+			throws QueryHeaderException, InactiveEndpointException, Exception {
+		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
+		return querier.ask(federatedQuery,
+				new DatasetImpl(ModelFactory.createDefaultModel()));
+
 	}
 
 	/**

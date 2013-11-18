@@ -3,12 +3,23 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Seagent</groupId>
 	<artifactId>wodqa</artifactId>
-	<version>0.0.3-20130515</version>
+	<version>0.0.3-20130902</version>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.jena</groupId>
 			<artifactId>jena-arq</artifactId>
-			<version>2.9.4</version>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>Seagent</groupId>
+			<artifactId>GraphCache</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jena-arq</artifactId>
+					<groupId>org.apache.jena</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>Seagent</groupId>
@@ -35,7 +46,13 @@
 		<dependency>
 			<groupId>Seagent</groupId>
 			<artifactId>BoundARQ</artifactId>
-			<version>0.0.1-20130410</version>
+			<version>0.0.2-20130607</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jena-arq</artifactId>
+					<groupId>org.apache.jena</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 	<repositories>
