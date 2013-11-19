@@ -30,6 +30,10 @@
 					<artifactId>arq</artifactId>
 					<groupId>com.hp.hpl.jena</groupId>
 				</exclusion>
+				<exclusion>
+					<artifactId>junit</artifactId>
+					<groupId>junit</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -41,6 +45,26 @@
 					<artifactId>arq</artifactId>
 					<groupId>com.hp.hpl.jena</groupId>
 				</exclusion>
+				<exclusion>
+					<artifactId>junit</artifactId>
+					<groupId>junit</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>xercesImpl</artifactId>
+					<groupId>xerces</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-log4j12</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>log4j</artifactId>
+					<groupId>log4j</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -51,6 +75,10 @@
 				<exclusion>
 					<artifactId>jena-arq</artifactId>
 					<groupId>org.apache.jena</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>junit</artifactId>
+					<groupId>junit</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>

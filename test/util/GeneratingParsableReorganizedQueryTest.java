@@ -5,6 +5,7 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import tr.edu.ege.seagent.wodqa.AbstractWoDQAComponentsTest;
@@ -41,6 +42,7 @@ public class GeneratingParsableReorganizedQueryTest extends
 	 * 
 	 * @throws Exception
 	 */
+	@Ignore
 	@Test
 	public void executeReorganizedQueryOnARQ() throws Exception {
 		// creating facebook, foursquare and linkedin VOIDs.
