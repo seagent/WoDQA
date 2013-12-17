@@ -3,6 +3,9 @@ package tr.edu.ege.seagent.wodqa.query;
 import java.util.List;
 import java.util.Vector;
 
+import query.UndefinedQueryTypeException;
+import query.UnsupportedNodeTypeException;
+
 import tr.edu.ege.seagent.boundarq.filterbound.QueryEngineFilter;
 import tr.edu.ege.seagent.dataset.crawler.VoidCrawler;
 import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
@@ -27,11 +30,16 @@ public class WodqaEngine {
 
 	private String federatedQuery;
 	private Querier querier;
+	private boolean isCacheActive;
+
+	public boolean isCacheActive() {
+		return isCacheActive;
+	}
 
 	public WodqaEngine() {
 		super();
 		QueryEngineFilter.register();
-		querier = new Querier();
+		isCacheActive = false;
 	}
 
 	public WodqaEngine(boolean nestedLoop) {
@@ -39,39 +47,90 @@ public class WodqaEngine {
 		if (!nestedLoop) {
 			QueryEngineFilter.register();
 		}
+		isCacheActive = false;
+	}
+
+	public WodqaEngine(boolean nestedLoop, boolean isCacheActive) {
+		super();
+		if (!nestedLoop) {
+			QueryEngineFilter.register();
+		}
+		this.isCacheActive = isCacheActive;
+		if (isCacheActive) {
+			activateCache();
+		}
+	}
+
+	private void activateCache() {
 		querier = new Querier();
+	}
+
+	// private void deactivateCache() {
+	// querier = null;
+	// }
+
+	public ResultSet executeSelect(String federatedQuery)
+			throws UndefinedQueryTypeException, UnsupportedNodeTypeException {
+		DatasetImpl dataset = new DatasetImpl(ModelFactory.createDefaultModel());
+		if (isCacheActive) {
+			return querier.select(federatedQuery, dataset);
+		}
+		return QueryExecutionFactory.create(federatedQuery, dataset)
+				.execSelect();
+	}
+
+	public Model executeConstruct(String federatedQuery)
+			throws UndefinedQueryTypeException, UnsupportedNodeTypeException {
+		DatasetImpl dataset = new DatasetImpl(ModelFactory.createDefaultModel());
+		if (isCacheActive) {
+			return querier.construct(federatedQuery, dataset);
+		}
+		return QueryExecutionFactory.create(federatedQuery, dataset)
+				.execConstruct();
+	}
+
+	public Model executeDescribe(String federatedQuery)
+			throws UndefinedQueryTypeException, UnsupportedNodeTypeException {
+		DatasetImpl dataset = new DatasetImpl(ModelFactory.createDefaultModel());
+		if (isCacheActive) {
+			return querier.describe(federatedQuery, dataset);
+		}
+		return QueryExecutionFactory.create(federatedQuery, dataset)
+				.execDescribe();
+	}
+
+	public boolean executeAsk(String federatedQuery)
+			throws UndefinedQueryTypeException, UnsupportedNodeTypeException {
+		DatasetImpl dataset = new DatasetImpl(ModelFactory.createDefaultModel());
+		if (isCacheActive) {
+			return querier.ask(federatedQuery, dataset);
+		}
+		return QueryExecutionFactory.create(federatedQuery, dataset).execAsk();
 	}
 
 	public ResultSet select(Model mainModel, String simpleQuery, boolean askOpt)
 			throws QueryHeaderException, InactiveEndpointException, Exception {
 		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
-		return querier.select(federatedQuery,
-				new DatasetImpl(ModelFactory.createDefaultModel()));
 
+		return executeSelect(federatedQuery);
 	}
 
 	public Model construct(Model mainModel, String simpleQuery, boolean askOpt)
 			throws QueryHeaderException, InactiveEndpointException, Exception {
 		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
-		return querier.construct(federatedQuery,
-				new DatasetImpl(ModelFactory.createDefaultModel()));
-
+		return executeConstruct(federatedQuery);
 	}
 
 	public Model describe(Model mainModel, String simpleQuery, boolean askOpt)
 			throws QueryHeaderException, InactiveEndpointException, Exception {
 		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
-		return querier.describe(federatedQuery,
-				new DatasetImpl(ModelFactory.createDefaultModel()));
-
+		return executeDescribe(federatedQuery);
 	}
 
 	public boolean ask(Model mainModel, String simpleQuery, boolean askOpt)
 			throws QueryHeaderException, InactiveEndpointException, Exception {
 		String federatedQuery = federateQuery(mainModel, simpleQuery, askOpt);
-		return querier.ask(federatedQuery,
-				new DatasetImpl(ModelFactory.createDefaultModel()));
-
+		return executeAsk(federatedQuery);
 	}
 
 	/**
