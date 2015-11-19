@@ -1,0 +1,852 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://rdfs.org/ns/void#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5024424926243333">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8104722055889266">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6442727969647276">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8686959858524672">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8704544364948344">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.24817408996462031">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.40244373997774285">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.2815200433429945">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6861970253886874">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9428038542451964">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.02807094683083644">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.3199484764068088">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/dbpedia#indv_0.9145900649750467"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.275580972386394">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8061262127318675">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7883340018551541">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8599108484435948">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.08081021656019782">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5803632384347758">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9030315276400696">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/10#indv_0.7323682965001294"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/brandedDrug"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6264910570617481">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.27117849123110194">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.24370261953920358"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.09949463746845222">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.07437961655217273">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7830004890583411">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.823542312782389">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6100441689044694">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.24190907718272148">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7154469541987871">
+    <j.0:uriSpace>http://www4.wiwiss.fu-berlin.de/drugbank/resource/targets/</j.0:uriSpace>
+    <j.0:uriSpace>http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/</j.0:uriSpace>
+    <j.0:uriSpace>http://www.w3.org/2002/07/owl#</j.0:uriSpace>
+    <j.0:uriSpace>http://www4.wiwiss.fu-berlin.de/drugbank/resource/enzymes/</j.0:uriSpace>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <j.0:uriSpace>http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/</j.0:uriSpace>
+    <j.0:uriSpace>http://www4.wiwiss.fu-berlin.de/drugbank/resource/references/</j.0:uriSpace>
+    <j.0:sparqlEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://localhost:8000/sparql/</j.0:sparqlEndpoint>
+    <j.0:vocabulary>http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/</j.0:vocabulary>
+    <j.0:uriSpace>http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/</j.0:uriSpace>
+    <j.0:uriSpace>http://www4.wiwiss.fu-berlin.de/drugbank/resource/drug_interactions/</j.0:uriSpace>
+    <j.0:uriSpace>http://www.w3.org/2000/01/rdf-schema#</j.0:uriSpace>
+    <j.0:vocabulary>http://xmlns.com/foaf/0.1/</j.0:vocabulary>
+    <j.0:uriSpace>http://xmlns.com/foaf/0.1/</j.0:uriSpace>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7945883799727859">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.4874258960136505">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/22#indv_0.8301085388428726"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.22821601167017747">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5777418307780067">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.2948537187407154">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8594279977636146">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.27733362708795084">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.4764072298096391">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9400260163672525">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9619304954810665">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.4421760918854223">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.24370261953920358"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.11105497527710184">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5221245516634173">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6705106636747198">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.1439039832348349">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5327951211913887">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.17545178694032093">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8539142287459061">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.051578333557347755">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.3178507396856344">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8853068764096375">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6516077664839507">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.12432428118485139">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/34#indv_0.5935313017764311"/>
+    <j.0:linkPredicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9437701840749998">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8634608174686346">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.05130939915168631">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.4366951186918495">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/24#indv_0.12035702880333687"/>
+    <j.0:linkPredicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5208308647130573">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7797521096234715">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.24836500230415426">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9817461517223881">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5966600923294868"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.0317846680412498">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.021980251956654095">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5966600923294868"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.15759251231019766">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.05971854137406518">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.013862898510844213">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/26#indv_0.9366561581979931"/>
+    <j.0:linkPredicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.80062085279599">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/18#indv_0.6146661816766646"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6614431992234275">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.017336319703366354">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7280982750318324">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.12752742505897718">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/40#indv_0.2951378624677117"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/possibleDiseaseTarget"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8156009817327279">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.18978058408317178">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5966600923294868"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.4577904908461684">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/69#indv_0.635840549978473"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/enzyme"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.43840800830963367">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.956194527137424">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.8824977855226643"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.600930294386091">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.09113192172987405">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.15035467444849415">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.34581349010537443">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9385855455352843">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.03591914315441058">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/35#indv_0.0945882344901553"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7835031113155575">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9489119208826859">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7215706026247718">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.2106651365468395">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.3714356335885419">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.05818110600163784">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.039689376700450696">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.12182851779734882">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/6#indv_0.6539039339533074"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.05093289988173266">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8848974152171344">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7505636441902092">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.08553208154737268">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6287139582134882">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.041643961704295074">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.3887541253249813">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.42890920064912663">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5749933887947021"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7369019542946313">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.07687698980132207">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.35306673480075945">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.0032466712395602393">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5305844063216184">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.07300402105309545">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/68#indv_0.3427273691209257"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.11860448752194164">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.24370261953920358"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.019436128430498134">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.015458754230359584">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.9954737050710458"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5215999497282989">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6382816870260662">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.2519030391771069">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+<!--  <rdf:Description rdf:about="http://datasets/0#indv_0.13114478862890788">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/4#indv_0.6095196231737889"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.267801891660306">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.4323247677479347"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8985016371491208">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/27#indv_0.5563687903363749"/>
+    <j.0:linkPredicate rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6798293286406708">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7272365142093721">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/22#indv_0.8301085388428726"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8636972702848681">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.3515464876650135"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.05991958909640327">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7373332766108134"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.12131794925465644">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/22#indv_0.8301085388428726"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8763987694490386">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6065591493244727">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.00420166959681767"/>
+    <j.0:linkPredicate rdf:resource="http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.8778065656560956">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7154469541987871"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/15#indv_0.38581879750566495"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+</rdf:RDF>

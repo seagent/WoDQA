@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://rdfs.org/ns/void#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://datasets/linkedMdb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/linkedMdb#indv_0.7447588411027833">
+    <j.0:vocabulary>http://data.linkedmdb.org/resource/movie/</j.0:vocabulary>
+    <j.0:uriSpace>http://data.linkedmdb.org/resource/</j.0:uriSpace>
+    <j.0:sparqlEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://localhost:2500/sparql/</j.0:sparqlEndpoint>
+    <j.0:vocabulary>http://purl.org/dc/elements/1.1/</j.0:vocabulary>
+    <j.0:vocabulary>http://purl.org/dc/terms/</j.0:vocabulary>
+    <j.0:vocabulary>http://www.w3.org/2004/02/skos/core#</j.0:vocabulary>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <j.0:triples>6148121</j.0:triples>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/linkedMdb#indv_0.9719091622175651">
+    <j.0:subjectsTarget rdf:resource="http://datasets/linkedMdb#indv_0.7447588411027833"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:entities rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:entities>
+    <j.0:documents rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:documents>
+    <j.0:properties rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:properties>
+    <j.0:triples rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:triples>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <j.0:subset rdf:resource="http://datasets/linkedMdb#indv_0.7447588411027833"/>
+    <j.0:classes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:classes>
+    <j.0:distinctSubjects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:distinctSubjects>
+    <j.0:distinctObjects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:distinctObjects>
+    <j.0:objectsTarget rdf:resource="http://datasets/dbpedia#indv_0.9145900649750467"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,32 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://rdfs.org/ns/void#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8808401766220822">
+    <j.0:uriSpace>http://dbtune.org/jamendo/interval/</j.0:uriSpace>
+    <j.0:sparqlEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://localhost:5000/sparql/</j.0:sparqlEndpoint>
+    <j.0:uriSpace>http://artlibre.org/licence.php/</j.0:uriSpace>
+    <j.0:vocabulary>http://purl.org/NET/c4dm/timeline.owl#</j.0:vocabulary>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <j.0:vocabulary>http://xmlns.com/foaf/0.1/</j.0:vocabulary>
+    <j.0:uriSpace>http://dbtune.org/jamendo/signal/</j.0:uriSpace>
+    <j.0:vocabulary>http://purl.org/dc/elements/1.1/</j.0:vocabulary>
+    <j.0:vocabulary>http://www.holygoat.co.uk/owl/redwood/0.1/tags/</j.0:vocabulary>
+    <j.0:uriSpace>http://www.jamendo.com/get/album/id/</j.0:uriSpace>
+    <j.0:vocabulary>http://purl.org/ontology/mo/</j.0:vocabulary>
+    <j.0:uriSpace>http://www.jamendo.com/get/track/id/</j.0:uriSpace>
+    <j.0:uriSpace>http://dbtune.org/jamendo/track/</j.0:uriSpace>
+    <j.0:uriSpace>http://dbtune.org/jamendo/lyrics/</j.0:uriSpace>
+    <j.0:uriSpace>http://creativecommons.org/licenses/</j.0:uriSpace>
+    <j.0:uriSpace>http://dbtune.org/jamendo/tag/</j.0:uriSpace>
+    <j.0:uriSpace>http://dbtune.org/jamendo/record/</j.0:uriSpace>
+    <j.0:uriSpace>http://dbtune.org/jamendo/artist/</j.0:uriSpace>
+    <j.0:uriSpace>http://dbtune.org/jamendo/performance/</j.0:uriSpace>
+    <j.0:vocabulary>http://purl.org/NET/c4dm/event.owl#</j.0:vocabulary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,34 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://rdfs.org/ns/void#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://datasets/geonames#indv_0.54827524734494">
+    <j.0:entities rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:entities>
+    <j.0:triples rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:triples>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:properties rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:properties>
+    <j.0:objectsTarget rdf:resource="http://datasets/dbpedia#indv_0.9145900649750467"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:distinctSubjects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:distinctSubjects>
+    <j.0:classes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:classes>
+    <j.0:documents rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:documents>
+    <j.0:distinctObjects rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:distinctObjects>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/geonames#indv_0.32581606535856833">
+    <j.0:uriSpace>http://sws.geonames.org/</j.0:uriSpace>
+    <j.0:vocabulary>http://xmlns.com/foaf/0.1/</j.0:vocabulary>
+    <j.0:vocabulary>http://purl.org/dc/terms/</j.0:vocabulary>
+    <j.0:vocabulary>http://creativecommons.org/ns#</j.0:vocabulary>
+    <j.0:vocabulary>http://www.w3.org/2003/01/geo/wgs84_pos#</j.0:vocabulary>
+    <j.0:vocabulary>http://www.geonames.org/ontology#</j.0:vocabulary>
+    <j.0:sparqlEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://localhost:2000/sparql/</j.0:sparqlEndpoint>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/geonames">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+</rdf:RDF>

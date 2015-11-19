@@ -1,0 +1,414 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://rdfs.org/ns/void#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6933927973075599">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#featureClass"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5157064894324955">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#countryCode"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.006202247869252164">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.03501863563052676">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#wikipediaArticle"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.44851397119346903">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#nearbyFeatures"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.9223770940007048">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/18#indv_0.6146661816766646"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7241069057134013">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7972489679491286">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#population"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.28119781166630264">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#locationMap"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.2411014888085743">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.24370261953920358"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9024021098732792">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.4771169631580491">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7994960283155084"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9136415988569798">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#inCountry"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.24067460064331025">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/4#indv_0.6095196231737889"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.08565175015442139">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/22#indv_0.8301085388428726"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.7016902344764476">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/26#indv_0.9366561581979931"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.18951522122574982">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#neighbouringFeatures"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9311968701745799">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.46771750778247134">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#countryCode"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.1431984544399506">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#childrenFeatures"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.15337945411868026">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#name"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7403931421308076">
+    <j.0:vocabulary>http://purl.org/dc/terms/</j.0:vocabulary>
+    <j.0:vocabulary>http://xmlns.com/foaf/0.1/</j.0:vocabulary>
+    <j.0:uriSpace>http://data.nytimes.com/</j.0:uriSpace>
+    <j.0:vocabulary>http://creativecommons.org/ns#</j.0:vocabulary>
+    <j.0:vocabulary>http://purl.org/dc/elements/1.1/</j.0:vocabulary>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <j.0:triples>90821</j.0:triples>
+    <j.0:sparqlEndpoint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://localhost:9000/sparql/</j.0:sparqlEndpoint>
+    <j.0:vocabulary>http://data.nytimes.com/elements/</j.0:vocabulary>
+    <j.0:vocabulary>http://www.w3.org/2004/02/skos/core#</j.0:vocabulary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6882158687752713">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#childrenFeatures"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9613821197176731">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#name"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.045654269392447655">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#inCountry"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6063001007609715">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#alternateName"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9488120291635227">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#wikipediaArticle"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.8638567627527386">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.5966600923294868"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9263578464512437">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.29381921909885866">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#postalCode"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9796202533064305">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#parentFeature"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.43551556154922355">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#nearbyFeatures"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.6069084592236117">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/6#indv_0.6539039339533074"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.2518559640644987">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/27#indv_0.5563687903363749"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.4657152760798706">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.0703130828094446">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.992789130503645"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.49268264359198677">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7244293477124413">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#featureCode"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6737529212247014">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#postalCode"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9349911799568558">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#alternateName"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.4272220565294744">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.795963170692847">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/24#indv_0.12035702880333687"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.9623937484509402">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#parentFeature"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7018066433882982">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#neighbouringFeatures"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.9071501868628974">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/35#indv_0.0945882344901553"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.04853067968616953">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/dbpedia#indv_0.9145900649750467"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.5466546447026884">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#featureCode"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7642552909053975">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#nearbyFeatures"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.20740633130085728">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#locationMap"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.6802631149610548">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#population"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.1923649018976903">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/15#indv_0.38581879750566495"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.8713270612666224">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#parentFeature"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <!--<rdf:Description rdf:about="http://datasets/0#indv_0.5315245596327943">
+    <j.0:subset rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.007632503946096825"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>-->
+  <rdf:Description rdf:about="http://datasets/0#indv_0.7476538334403104">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.35831176200973824">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#neighbouringFeatures"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.3098140730526989">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#childrenFeatures"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://datasets/0#indv_0.3308150117456704">
+    <j.0:subset rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:subjectsTarget rdf:resource="http://datasets/geonames#indv_0.32581606535856833"/>
+    <j.0:objectsTarget rdf:resource="http://datasets/0#indv_0.7403931421308076"/>
+    <j.0:linkPredicate rdf:resource="http://www.geonames.org/ontology#featureClass"/>
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Linkset"/>
+  </rdf:Description>
+</rdf:RDF>
