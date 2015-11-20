@@ -31,6 +31,10 @@ public class WoDQAEvaluation {
 
 	private static final String CROSS_DOMAIN_PREFIX = "CROSS DOMAIN QUERY-";
 
+	private static final String DEFAULT_RESULT_FILE_PATH = "evaluation/result.txt";
+
+	private static final String DEFAULT_VOID_FILE_DIRECTORY = "evaluation/voids";
+
 	private WodqaEngine wodqaEngine;
 
 	private Model mainModel;
@@ -38,18 +42,18 @@ public class WoDQAEvaluation {
 	private Logger logger;
 
 	private String queryResults;
-	private String resultFileName;
 
-	private String VOID_FILE_DIRECTORY;
+	private String voidFileDir;
 
 	private List<String> avreageAnalyisTimes;
 	private List<String> avreageExecutionTimes;
 
-	public WoDQAEvaluation(String voidDir, String resultFilePath)
-			throws MalformedURLException {
+	public WoDQAEvaluation(String voidFileDir) throws MalformedURLException {
+		if (voidFileDir == null) {
+			voidFileDir = DEFAULT_VOID_FILE_DIRECTORY;
+		}
 		this.queryResults = "";
-		this.resultFileName = resultFilePath;
-		this.VOID_FILE_DIRECTORY = voidDir;
+		this.voidFileDir = voidFileDir;
 		this.logger = Logger.getLogger(WoDQAEvaluation.class);
 		this.logger.setLevel(Level.DEBUG);
 
@@ -63,7 +67,7 @@ public class WoDQAEvaluation {
 
 	public void constructVOIDSpaceModel() throws MalformedURLException {
 		List<VOIDIndividualOntology> readModels = VOIDFileReader
-				.readFilesIntoModel(VOID_FILE_DIRECTORY);
+				.readFilesIntoModel(voidFileDir);
 		this.mainModel = ModelFactory.createDefaultModel();
 		for (VOIDIndividualOntology voidIndividualOntology : readModels) {
 			this.mainModel.add(voidIndividualOntology.getOntModel());
@@ -98,13 +102,13 @@ public class WoDQAEvaluation {
 		return linksets;
 	}
 
-	public void evaluateFedBench() throws Exception {
+	public void evaluateOnFedBench(String resultFilePath) throws Exception {
 		evaluateCrossDomain();
 		evaluateLifeSciences();
-		calculateFinalResults();
+		calculateFinalResults(resultFilePath);
 	}
 
-	public void evaluateCrossDomain() throws Exception {
+	private void evaluateCrossDomain() throws Exception {
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_1,
 				getQueryName(CROSS_DOMAIN_PREFIX, 1), true, 10);
 
@@ -127,7 +131,7 @@ public class WoDQAEvaluation {
 				getQueryName(CROSS_DOMAIN_PREFIX, 7), true, 10);
 	}
 
-	public void evaluateLifeSciences() throws Exception {
+	private void evaluateLifeSciences() throws Exception {
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_1,
 				getQueryName(LIFE_SCIENCES_PREFIX, 1), true, 10);
 
@@ -276,7 +280,11 @@ public class WoDQAEvaluation {
 		return maxIndex;
 	}
 
-	private void calculateFinalResults() throws Exception {
+	private void calculateFinalResults(String resultFilePath) throws Exception {
+
+		if (resultFilePath == null) {
+			resultFilePath = DEFAULT_RESULT_FILE_PATH;
+		}
 
 		String averageAnalysisTimeResults = "\n Average Analysis Times: ";
 		averageAnalysisTimeResults += "\n****************************************\n";
@@ -297,7 +305,7 @@ public class WoDQAEvaluation {
 		queryResults += averageExecutionTimeResults;
 
 		logger.info(queryResults);
-		FileWriter fileWriter = new FileWriter(resultFileName);
+		FileWriter fileWriter = new FileWriter(resultFilePath);
 		fileWriter.write(queryResults);
 		fileWriter.close();
 	}

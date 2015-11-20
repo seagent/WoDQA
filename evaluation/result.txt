@@ -1,106 +1,106 @@
 
 #####################################CROSS DOMAIN QUERY-1#####################################
- All Analysis Times: 513, 43, 35, 28, 26, 30, 30, 24, 28, 29,  Average Analysis Time: 28
- All Execution Times: 46, 17, 22, 19, 23, 15, 16, 19, 16, 15, , Average Execution Time: 17
- All Total Times: 559, 60, 57, 47, 49, 45, 46, 43, 44, 44,  Average Total Time: 46
+ All Analysis Times: 590, 42, 31, 27, 26, 27, 23, 20, 29, 23,  Average Analysis Time: 25
+ All Execution Times: 1413, 18, 20, 18, 18, 18, 16, 20, 15, 12, , Average Execution Time: 16
+ All Total Times: 2003, 60, 51, 45, 44, 45, 39, 40, 44, 35,  Average Total Time: 42
 ##############################################################################################
 #####################################CROSS DOMAIN QUERY-2#####################################
- All Analysis Times: 47, 22, 28, 33, 22, 21, 22, 31, 20, 21,  Average Analysis Time: 23
- All Execution Times: 16, 24, 28, 19, 19, 20, 25, 21, 20, 18, , Average Execution Time: 19
- All Total Times: 63, 46, 56, 52, 41, 41, 47, 52, 40, 39,  Average Total Time: 44
+ All Analysis Times: 48, 19, 22, 28, 21, 22, 21, 18, 20, 24,  Average Analysis Time: 20
+ All Execution Times: 18, 21, 26, 20, 19, 20, 20, 18, 27, 17, , Average Execution Time: 19
+ All Total Times: 66, 40, 48, 48, 40, 42, 41, 36, 47, 41,  Average Total Time: 41
 ##############################################################################################
 #####################################CROSS DOMAIN QUERY-3#####################################
- All Analysis Times: 67, 26, 29, 37, 33, 42, 45, 38, 39, 29,  Average Analysis Time: 34
- All Execution Times: 29, 31, 31, 34, 32, 27, 25, 23, 26, 25, , Average Execution Time: 27
- All Total Times: 96, 57, 60, 71, 65, 69, 70, 61, 65, 54,  Average Total Time: 62
+ All Analysis Times: 77, 32, 75, 27, 46, 34, 43, 32, 44, 27,  Average Analysis Time: 35
+ All Execution Times: 53, 39, 30, 38, 26, 24, 24, 26, 28, 22, , Average Execution Time: 27
+ All Total Times: 130, 71, 105, 65, 72, 58, 67, 58, 72, 49,  Average Total Time: 64
 ##############################################################################################
 #####################################CROSS DOMAIN QUERY-4#####################################
- All Analysis Times: 104, 46, 29, 27, 31, 28, 33, 40, 34, 33,  Average Analysis Time: 31
- All Execution Times: 17, 19, 70, 23, 24, 23, 22, 17, 22, 27, , Average Execution Time: 20
- All Total Times: 121, 65, 99, 50, 55, 51, 55, 57, 56, 60,  Average Total Time: 56
+ All Analysis Times: 113, 40, 41, 32, 32, 32, 31, 34, 29, 41,  Average Analysis Time: 33
+ All Execution Times: 39, 17, 15, 15, 20, 13, 15, 14, 13, 14, , Average Execution Time: 14
+ All Total Times: 152, 57, 56, 47, 52, 45, 46, 48, 42, 55,  Average Total Time: 48
 ##############################################################################################
 #####################################CROSS DOMAIN QUERY-5#####################################
- All Analysis Times: 46, 17, 16, 20, 17, 22, 22, 24, 16, 22,  Average Analysis Time: 19
- All Execution Times: 14, 14, 18, 17, 19, 25, 24, 18, 29, 26, , Average Execution Time: 18
- All Total Times: 60, 31, 34, 37, 36, 47, 46, 42, 45, 48,  Average Total Time: 39
+ All Analysis Times: 47, 16, 32, 21, 19, 17, 23, 24, 16, 24,  Average Analysis Time: 20
+ All Execution Times: 37, 16, 18, 18, 17, 17, 29, 21, 21, 20, , Average Execution Time: 18
+ All Total Times: 84, 32, 50, 39, 36, 34, 52, 45, 37, 44,  Average Total Time: 39
 ##############################################################################################
 #####################################CROSS DOMAIN QUERY-6#####################################
- All Analysis Times: 164, 17, 15, 12, 17, 19, 16, 16, 11, 15,  Average Analysis Time: 14
- All Execution Times: 425, 206, 175, 114, 126, 124, 134, 107, 82, 110, , Average Execution Time: 121
- All Total Times: 589, 223, 190, 126, 143, 143, 150, 123, 93, 125,  Average Total Time: 136
+ All Analysis Times: 177, 16, 16, 18, 19, 19, 12, 17, 16, 18,  Average Analysis Time: 16
+ All Execution Times: 661, 190, 164, 150, 113, 95, 82, 88, 96, 108, , Average Execution Time: 112
+ All Total Times: 838, 206, 180, 168, 132, 114, 94, 105, 112, 126,  Average Total Time: 128
 ##############################################################################################
 #####################################CROSS DOMAIN QUERY-7#####################################
- All Analysis Times: 25, 14, 17, 16, 12, 16, 12, 18, 17, 17,  Average Analysis Time: 15
- All Execution Times: 30, 29, 16, 26, 21, 21, 26, 17, 31, 30, , Average Execution Time: 23
- All Total Times: 55, 43, 33, 42, 33, 37, 38, 35, 48, 47,  Average Total Time: 38
+ All Analysis Times: 29, 13, 14, 16, 12, 13, 13, 18, 19, 11,  Average Analysis Time: 13
+ All Execution Times: 95, 18, 20, 18, 16, 19, 27, 24, 16, 15, , Average Execution Time: 18
+ All Total Times: 124, 31, 34, 34, 28, 32, 40, 42, 35, 26,  Average Total Time: 32
 ##############################################################################################
 #####################################LIFE SCIENCES QUERY-1#####################################
- All Analysis Times: 20, 8, 7, 8, 9, 5, 9, 8, 7, 6,  Average Analysis Time: 7
- All Execution Times: 17, 17, 19, 16, 11, 13, 16, 18, 11, 14, , Average Execution Time: 14
- All Total Times: 37, 25, 26, 24, 20, 18, 25, 26, 18, 20,  Average Total Time: 22
+ All Analysis Times: 39, 5, 5, 9, 6, 9, 10, 8, 7, 10,  Average Analysis Time: 7
+ All Execution Times: 216, 11, 25, 16, 16, 13, 12, 15, 13, 11, , Average Execution Time: 13
+ All Total Times: 255, 16, 30, 25, 22, 22, 22, 23, 20, 21,  Average Total Time: 21
 ##############################################################################################
 #####################################LIFE SCIENCES QUERY-2#####################################
- All Analysis Times: 43, 16, 15, 14, 15, 20, 11, 10, 14, 10,  Average Analysis Time: 13
- All Execution Times: 13, 11, 7, 7, 9, 9, 9, 10, 8, 9, , Average Execution Time: 8
- All Total Times: 56, 27, 22, 21, 24, 29, 20, 20, 22, 19,  Average Total Time: 21
+ All Analysis Times: 90, 14, 24, 11, 16, 13, 11, 13, 11, 11,  Average Analysis Time: 12
+ All Execution Times: 127, 8, 7, 8, 8, 6, 6, 7, 6, 10, , Average Execution Time: 7
+ All Total Times: 217, 22, 31, 19, 24, 19, 17, 20, 17, 21,  Average Total Time: 19
 ##############################################################################################
 #####################################LIFE SCIENCES QUERY-3#####################################
- All Analysis Times: 51, 14, 15, 16, 15, 13, 29, 13, 18, 13,  Average Analysis Time: 14
- All Execution Times: 341, 320, 316, 326, 298, 308, 313, 309, 303, 338, , Average Execution Time: 311
- All Total Times: 392, 334, 331, 342, 313, 321, 342, 322, 321, 351,  Average Total Time: 328
+ All Analysis Times: 55, 13, 14, 12, 13, 13, 12, 12, 13, 12,  Average Analysis Time: 12
+ All Execution Times: 1049, 335, 327, 317, 308, 318, 331, 341, 311, 301, , Average Execution Time: 318
+ All Total Times: 1104, 348, 341, 329, 321, 331, 343, 353, 324, 313,  Average Total Time: 331
 ##############################################################################################
 #####################################LIFE SCIENCES QUERY-4#####################################
- All Analysis Times: 87, 27, 23, 25, 28, 27, 24, 32, 27, 30,  Average Analysis Time: 26
- All Execution Times: 28, 22, 24, 20, 25, 17, 17, 19, 21, 26, , Average Execution Time: 20
- All Total Times: 115, 49, 47, 45, 53, 44, 41, 51, 48, 56,  Average Total Time: 47
+ All Analysis Times: 110, 30, 27, 30, 27, 30, 22, 37, 25, 25,  Average Analysis Time: 27
+ All Execution Times: 35, 16, 23, 30, 21, 17, 22, 19, 28, 21, , Average Execution Time: 20
+ All Total Times: 145, 46, 50, 60, 48, 47, 44, 56, 53, 46,  Average Total Time: 48
 ##############################################################################################
 #####################################LIFE SCIENCES QUERY-5#####################################
- All Analysis Times: 141, 26, 28, 28, 20, 19, 22, 25, 28, 19,  Average Analysis Time: 23
- All Execution Times: 226, 168, 164, 161, 159, 156, 148, 144, 151, 156, , Average Execution Time: 154
- All Total Times: 367, 194, 192, 189, 179, 175, 170, 169, 179, 175,  Average Total Time: 178
+ All Analysis Times: 184, 19, 30, 21, 26, 21, 20, 32, 19, 26,  Average Analysis Time: 22
+ All Execution Times: 718, 175, 155, 151, 161, 158, 158, 155, 136, 177, , Average Execution Time: 156
+ All Total Times: 902, 194, 185, 172, 187, 179, 178, 187, 155, 203,  Average Total Time: 179
 ##############################################################################################
 #####################################LIFE SCIENCES QUERY-6#####################################
- All Analysis Times: 65, 26, 30, 23, 25, 24, 21, 22, 27, 21,  Average Analysis Time: 23
- All Execution Times: 25, 24, 20, 25, 19, 23, 23, 25, 21, 14, , Average Execution Time: 21
- All Total Times: 90, 50, 50, 48, 44, 47, 44, 47, 48, 35,  Average Total Time: 45
+ All Analysis Times: 65, 22, 32, 17, 26, 21, 22, 21, 21, 23,  Average Analysis Time: 21
+ All Execution Times: 52, 19, 18, 23, 17, 27, 26, 27, 26, 19, , Average Execution Time: 21
+ All Total Times: 117, 41, 50, 40, 43, 48, 48, 48, 47, 42,  Average Total Time: 44
 ##############################################################################################
 #####################################LIFE SCIENCES QUERY-7#####################################
- All Analysis Times: 57, 28, 30, 17, 19, 26, 20, 21, 17, 29,  Average Analysis Time: 22
- All Execution Times: 59, 85, 66, 55, 61, 66, 76, 73, 56, 69, , Average Execution Time: 63
- All Total Times: 116, 113, 96, 72, 80, 92, 96, 94, 73, 98,  Average Total Time: 87
+ All Analysis Times: 55, 24, 21, 24, 23, 20, 24, 18, 26, 22,  Average Analysis Time: 22
+ All Execution Times: 104, 59, 67, 72, 63, 62, 75, 73, 66, 65, , Average Execution Time: 65
+ All Total Times: 159, 83, 88, 96, 86, 82, 99, 91, 92, 87,  Average Total Time: 88
 ##############################################################################################
  Average Analysis Times: 
 ****************************************
-CROSS DOMAIN QUERY-1: 28
-CROSS DOMAIN QUERY-2: 23
-CROSS DOMAIN QUERY-3: 34
-CROSS DOMAIN QUERY-4: 31
-CROSS DOMAIN QUERY-5: 19
-CROSS DOMAIN QUERY-6: 14
-CROSS DOMAIN QUERY-7: 15
+CROSS DOMAIN QUERY-1: 25
+CROSS DOMAIN QUERY-2: 20
+CROSS DOMAIN QUERY-3: 35
+CROSS DOMAIN QUERY-4: 33
+CROSS DOMAIN QUERY-5: 20
+CROSS DOMAIN QUERY-6: 16
+CROSS DOMAIN QUERY-7: 13
 LIFE SCIENCES QUERY-1: 7
-LIFE SCIENCES QUERY-2: 13
-LIFE SCIENCES QUERY-3: 14
-LIFE SCIENCES QUERY-4: 26
-LIFE SCIENCES QUERY-5: 23
-LIFE SCIENCES QUERY-6: 23
+LIFE SCIENCES QUERY-2: 12
+LIFE SCIENCES QUERY-3: 12
+LIFE SCIENCES QUERY-4: 27
+LIFE SCIENCES QUERY-5: 22
+LIFE SCIENCES QUERY-6: 21
 LIFE SCIENCES QUERY-7: 22
 ****************************************
 
  Average Execution Times: 
 ****************************************
-CROSS DOMAIN QUERY-1: 17
+CROSS DOMAIN QUERY-1: 16
 CROSS DOMAIN QUERY-2: 19
 CROSS DOMAIN QUERY-3: 27
-CROSS DOMAIN QUERY-4: 20
+CROSS DOMAIN QUERY-4: 14
 CROSS DOMAIN QUERY-5: 18
-CROSS DOMAIN QUERY-6: 121
-CROSS DOMAIN QUERY-7: 23
-LIFE SCIENCES QUERY-1: 14
-LIFE SCIENCES QUERY-2: 8
-LIFE SCIENCES QUERY-3: 311
+CROSS DOMAIN QUERY-6: 112
+CROSS DOMAIN QUERY-7: 18
+LIFE SCIENCES QUERY-1: 13
+LIFE SCIENCES QUERY-2: 7
+LIFE SCIENCES QUERY-3: 318
 LIFE SCIENCES QUERY-4: 20
-LIFE SCIENCES QUERY-5: 154
+LIFE SCIENCES QUERY-5: 156
 LIFE SCIENCES QUERY-6: 21
-LIFE SCIENCES QUERY-7: 63
+LIFE SCIENCES QUERY-7: 65
 ****************************************
