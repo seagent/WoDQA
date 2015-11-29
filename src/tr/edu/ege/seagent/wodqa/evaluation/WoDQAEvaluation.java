@@ -1,7 +1,5 @@
 package tr.edu.ege.seagent.wodqa.evaluation;
 
-import static org.junit.Assert.assertFalse;
-
 import java.io.FileWriter;
 import java.net.MalformedURLException;
 import java.text.MessageFormat;
@@ -26,6 +24,10 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.rdf.model.Resource;
 
 public class WoDQAEvaluation {
+
+	private static final boolean CACHE_ASK_QUERIES = true;
+
+	private static final int QUERY_EVALUATION_COUNT = 20;
 
 	private static final String LIFE_SCIENCES_PREFIX = "LIFE SCIENCES QUERY-";
 
@@ -110,48 +112,62 @@ public class WoDQAEvaluation {
 
 	private void evaluateCrossDomain() throws Exception {
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_1,
-				getQueryName(CROSS_DOMAIN_PREFIX, 1), true, 10);
+				getQueryName(CROSS_DOMAIN_PREFIX, 1), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_2,
-				getQueryName(CROSS_DOMAIN_PREFIX, 2), true, 10);
+				getQueryName(CROSS_DOMAIN_PREFIX, 2), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_3,
-				getQueryName(CROSS_DOMAIN_PREFIX, 3), true, 10);
+				getQueryName(CROSS_DOMAIN_PREFIX, 3), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_4,
-				getQueryName(CROSS_DOMAIN_PREFIX, 4), true, 10);
+				getQueryName(CROSS_DOMAIN_PREFIX, 4), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_5,
-				getQueryName(CROSS_DOMAIN_PREFIX, 5), true, 10);
+				getQueryName(CROSS_DOMAIN_PREFIX, 5), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_6,
-				getQueryName(CROSS_DOMAIN_PREFIX, 6), true, 10);
+				getQueryName(CROSS_DOMAIN_PREFIX, 6), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.CROSS_DOMAIN_QUERY_7,
-				getQueryName(CROSS_DOMAIN_PREFIX, 7), true, 10);
+				getQueryName(CROSS_DOMAIN_PREFIX, 7), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 	}
 
 	private void evaluateLifeSciences() throws Exception {
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_1,
-				getQueryName(LIFE_SCIENCES_PREFIX, 1), true, 10);
+				getQueryName(LIFE_SCIENCES_PREFIX, 1), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_2,
-				getQueryName(LIFE_SCIENCES_PREFIX, 2), true, 10);
+				getQueryName(LIFE_SCIENCES_PREFIX, 2), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_3,
-				getQueryName(LIFE_SCIENCES_PREFIX, 3), true, 10);
+				getQueryName(LIFE_SCIENCES_PREFIX, 3), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_4,
-				getQueryName(LIFE_SCIENCES_PREFIX, 4), true, 10);
+				getQueryName(LIFE_SCIENCES_PREFIX, 4), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_5,
-				getQueryName(LIFE_SCIENCES_PREFIX, 5), true, 10);
+				getQueryName(LIFE_SCIENCES_PREFIX, 5), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_6,
-				getQueryName(LIFE_SCIENCES_PREFIX, 6), true, 10);
+				getQueryName(LIFE_SCIENCES_PREFIX, 6), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 
 		executeQuery(Queries.LIFE_SCIENCES_QUERY_7,
-				getQueryName(LIFE_SCIENCES_PREFIX, 7), true, 10);
+				getQueryName(LIFE_SCIENCES_PREFIX, 7), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
 	}
 
 	public String getQueryName(String queryPrefix, int queryNo) {
@@ -186,9 +202,9 @@ public class WoDQAEvaluation {
 			long analysisTime = System.currentTimeMillis() - analysisStartTime;
 			analyzeTimes += analysisTime + ", ";
 
-			ResultSet res = wodqaEngine.executeSelect(federatedQuery);
 			long executionTime = 0;
 			long executionStartTime = System.currentTimeMillis();
+			ResultSet res = wodqaEngine.executeSelect(federatedQuery);
 			// get the only resultset or parse it too
 			iterateOnResults(res, false);
 			executionTime = System.currentTimeMillis() - executionStartTime;
@@ -229,26 +245,28 @@ public class WoDQAEvaluation {
 	}
 
 	private void iterateOnResults(ResultSet res, boolean parseAllResults) {
-		if (!parseAllResults) {
-			res.hasNext();
-		} else {
+		if (parseAllResults) {
 			while (res.hasNext()) {
 				res.next();
 			}
+		} else {
+			res.hasNext();
 		}
 	}
 
 	/**
-	 * This method calculates average time except from two maximum time.
+	 * This method calculates average time except from three maximum time.
 	 * 
 	 * @param totalTimes
 	 * @return
 	 */
 	private long calculateAverageTime(List<Long> totalTimes) {
 		long totalTime = 0;
-		if (totalTimes.size() > 2) {
+		if (totalTimes.size() > 3) {
 			// remove max two element
 			int maxIndex = findMaxTimeIndex(totalTimes);
+			totalTimes.remove(maxIndex);
+			maxIndex = findMaxTimeIndex(totalTimes);
 			totalTimes.remove(maxIndex);
 			maxIndex = findMaxTimeIndex(totalTimes);
 			totalTimes.remove(maxIndex);
