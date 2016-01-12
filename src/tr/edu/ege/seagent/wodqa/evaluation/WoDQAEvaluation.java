@@ -14,6 +14,7 @@ import tr.edu.ege.seagent.wodqa.QueryVocabulary;
 import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
 import tr.edu.ege.seagent.wodqa.exception.QueryHeaderException;
 import tr.edu.ege.seagent.wodqa.query.WodqaEngine;
+import tr.edu.ege.seagent.wodqa.voiddocument.VoidModelConstructor;
 
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
@@ -63,45 +64,8 @@ public class WoDQAEvaluation {
 		this.avreageAnalyisTimes = new ArrayList<String>();
 		this.avreageExecutionTimes = new ArrayList<String>();
 
-		constructVOIDSpaceModel();
+		mainModel = VoidModelConstructor.constructVOIDSpaceModel(voidFileDir);
 		this.wodqaEngine = new WodqaEngine(false, false);
-	}
-
-	public void constructVOIDSpaceModel() throws MalformedURLException {
-		List<VOIDIndividualOntology> readModels = VOIDFileReader
-				.readFilesIntoModel(voidFileDir);
-		this.mainModel = ModelFactory.createDefaultModel();
-		for (VOIDIndividualOntology voidIndividualOntology : readModels) {
-			this.mainModel.add(voidIndividualOntology.getOntModel());
-		}
-
-		// retrieve non appropriate linkset
-		List<Resource> nonReachableLinksets = getNonAppropriateLinksets();
-		for (Resource linkset : nonReachableLinksets) {
-			this.mainModel.removeAll(linkset, null, (RDFNode) null);
-		}
-	}
-
-	/**
-	 * This method gets non appropriate linksets and datasets that holds exluded
-	 * datasets as their objectsTarget.
-	 * 
-	 * @return
-	 */
-	private List<Resource> getNonAppropriateLinksets() {
-		List<Resource> linksets = new ArrayList<Resource>();
-		String query = QueryVocabulary.RDF_PREFIX_URI
-				+ QueryVocabulary.VOID_PREFIX_URI
-				+ "SELECT ?linkset ?dataset WHERE{"
-				+ "?linkset void:objectsTarget ?dataset."
-				+ "FILTER NOT EXISTS{?dataset rdf:type void:Dataset.}}";
-		QueryExecution queryExecution = QueryExecutionFactory.create(query,
-				this.mainModel);
-		ResultSet resultSet = queryExecution.execSelect();
-		while (resultSet.hasNext()) {
-			linksets.add(resultSet.next().getResource("linkset"));
-		}
-		return linksets;
 	}
 
 	public void evaluateOnFedBench(String resultFilePath) throws Exception {
