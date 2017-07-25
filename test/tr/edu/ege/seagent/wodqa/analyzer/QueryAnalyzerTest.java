@@ -1,7 +1,6 @@
 package tr.edu.ege.seagent.wodqa.analyzer;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.util.List;
 
@@ -16,6 +15,7 @@ import tr.edu.ege.seagent.wodqa.VOIDCreator;
 import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
 import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
 import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
+import tr.edu.ege.seagent.wodqa.voiddocument.VoidModelConstructor;
 
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Literal;

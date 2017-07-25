@@ -23,6 +23,7 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.sparql.core.DatasetImpl;
+import com.hp.hpl.jena.sparql.engine.QueryEngineBase;
 
 import core.Querier;
 

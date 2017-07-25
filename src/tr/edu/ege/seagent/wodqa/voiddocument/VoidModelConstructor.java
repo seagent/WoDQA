@@ -8,6 +8,7 @@ import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
 import tr.edu.ege.seagent.wodqa.QueryVocabulary;
 import tr.edu.ege.seagent.wodqa.evaluation.VOIDFileReader;
 
+import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.ResultSet;
@@ -29,13 +30,10 @@ public class VoidModelConstructor {
 	 */
 	public static List<Resource> getNonAppropriateLinksets(Model model) {
 		List<Resource> linksets = new ArrayList<Resource>();
-		String query = QueryVocabulary.RDF_PREFIX_URI
-				+ QueryVocabulary.VOID_PREFIX_URI
-				+ "SELECT ?linkset ?dataset WHERE{"
-				+ "?linkset void:objectsTarget ?dataset."
+		String query = QueryVocabulary.RDF_PREFIX_URI + QueryVocabulary.VOID_PREFIX_URI
+				+ "SELECT ?linkset ?dataset WHERE{" + "?linkset void:objectsTarget ?dataset."
 				+ "FILTER NOT EXISTS{?dataset rdf:type void:Dataset.}}";
-		QueryExecution queryExecution = QueryExecutionFactory.create(query,
-				model);
+		QueryExecution queryExecution = QueryExecutionFactory.create(query, model);
 		ResultSet resultSet = queryExecution.execSelect();
 		while (resultSet.hasNext()) {
 			linksets.add(resultSet.next().getResource("linkset"));
@@ -43,14 +41,12 @@ public class VoidModelConstructor {
 		return linksets;
 	}
 
-	public static Model constructVOIDSpaceModel(String voidFilePath)
-			throws MalformedURLException {
+	public static Model constructVOIDSpaceModel(String voidFilePath) throws MalformedURLException {
 
-		List<VOIDIndividualOntology> readModels = VOIDFileReader
-				.readFilesIntoModel(voidFilePath);
+		List<Model> readModels = VOIDFileReader.readFilesIntoModel(voidFilePath);
 		Model mainModel = ModelFactory.createDefaultModel();
-		for (VOIDIndividualOntology voidIndividualOntology : readModels) {
-			mainModel.add(voidIndividualOntology.getOntModel());
+		for (Model model : readModels) {
+			mainModel.add(model);
 		}
 
 		// retrieve non appropriate linkset
