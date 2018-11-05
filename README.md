@@ -1,6 +1,6 @@
 # WoDQA
 
-To add this project as maven repository simply follow instructions below:
+To add this project as maven dependency simply follow instructions below:
 
 1- Add the repository information below into repositories section of your pom.xml:
 
