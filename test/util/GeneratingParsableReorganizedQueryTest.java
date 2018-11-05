@@ -8,15 +8,15 @@ import java.util.List;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import tr.edu.ege.seagent.wodqa.AbstractWoDQAComponentsTest;
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
-import tr.edu.ege.seagent.wodqa.VOIDCreator;
-import tr.edu.ege.seagent.wodqa.query.WodqaEngine;
-
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryParseException;
 import com.hp.hpl.jena.rdf.model.Model;
+
+import tr.edu.ege.seagent.wodqa.AbstractWoDQAComponentsTest;
+import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import tr.edu.ege.seagent.wodqa.query.WodqaEngine;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDCreator;
 
 /**
  * This class contains test for executing a parsable reorganized query on ARQ.

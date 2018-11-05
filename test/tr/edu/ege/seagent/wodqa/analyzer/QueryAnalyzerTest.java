@@ -1,26 +1,23 @@
 package tr.edu.ege.seagent.wodqa.analyzer;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
-import org.junit.Assert;
 import org.junit.Test;
-
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDOntologyVocabulary;
-import tr.edu.ege.seagent.wodqa.AbstractWoDQAComponentsTest;
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
-import tr.edu.ege.seagent.wodqa.VOIDCreator;
-import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
-import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
-import tr.edu.ege.seagent.wodqa.voiddocument.VoidModelConstructor;
 
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
+
+import tr.edu.ege.seagent.wodqa.AbstractWoDQAComponentsTest;
+import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
+import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDCreator;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDIndividualOntology;
 
 public class QueryAnalyzerTest extends AbstractWoDQAComponentsTest {
 	private static final String DBPEDIA_PREFIXES = "PREFIX dbpedia: <http://dbpedia.org/resource/> \nPREFIX dbp-ont:<http://dbpedia.org/ontology/>";

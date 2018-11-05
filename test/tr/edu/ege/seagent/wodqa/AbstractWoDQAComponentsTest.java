@@ -2,13 +2,14 @@ package tr.edu.ege.seagent.wodqa;
 
 import java.net.MalformedURLException;
 
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
-import util.TestConstants;
-
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.sparql.vocabulary.FOAF;
+
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDCreator;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDIndividualOntology;
+import util.TestConstants;
 
 public class AbstractWoDQAComponentsTest {
 

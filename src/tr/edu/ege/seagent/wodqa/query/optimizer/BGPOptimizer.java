@@ -3,14 +3,14 @@ package tr.edu.ege.seagent.wodqa.query.optimizer;
 import java.util.List;
 import java.util.Vector;
 
-import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
-
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.ResultSet;
+
+import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
 
 /**
  * This class provides heuristic based triple reordering and using VOID

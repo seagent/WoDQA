@@ -9,20 +9,13 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.Model;
+
 import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
 import tr.edu.ege.seagent.wodqa.exception.QueryHeaderException;
 import tr.edu.ege.seagent.wodqa.query.WodqaEngine;
 import tr.edu.ege.seagent.wodqa.voiddocument.VoidModelConstructor;
-
-import com.hp.hpl.jena.query.QueryExecution;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.Resource;
 
 public class WoDQAEvaluation {
 
@@ -30,6 +23,10 @@ public class WoDQAEvaluation {
 
 	private static final int QUERY_EVALUATION_COUNT = 20;
 
+	private static final String LINKED_DATA_PREFIX = "LINKED DATA QUERY-";
+	
+	private static final String SP2B_PREFIX = "SP2B QUERY-";
+	
 	private static final String LIFE_SCIENCES_PREFIX = "LIFE SCIENCES QUERY-";
 
 	private static final String CROSS_DOMAIN_PREFIX = "CROSS DOMAIN QUERY-";
@@ -71,6 +68,8 @@ public class WoDQAEvaluation {
 	public void evaluateOnFedBench(String resultFilePath) throws Exception {
 		evaluateCrossDomain();
 		evaluateLifeSciences();
+//		evaluateSP2B();
+//		evaluateLinkedData();
 		calculateFinalResults(resultFilePath);
 	}
 
@@ -133,6 +132,118 @@ public class WoDQAEvaluation {
 				getQueryName(LIFE_SCIENCES_PREFIX, 7), CACHE_ASK_QUERIES,
 				QUERY_EVALUATION_COUNT);
 	}
+	
+	private void evaluateSP2B() throws Exception {
+		executeQuery(Queries.SP2B_Q1,
+				getQueryName(SP2B_PREFIX, 1), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		//
+		executeQuery(Queries.SP2B_Q2,
+				getQueryName(SP2B_PREFIX, 2), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.SP2B_Q3a,
+				getQueryName(SP2B_PREFIX, 3), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.SP2B_Q3b,
+				getQueryName(SP2B_PREFIX, 4), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.SP2B_Q3c,
+				getQueryName(SP2B_PREFIX, 5), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		//
+		executeQuery(Queries.SP2B_Q4a,
+				getQueryName(SP2B_PREFIX, 6), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		//
+		executeQuery(Queries.SP2B_Q4b,
+				getQueryName(SP2B_PREFIX, 7), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		//
+		executeQuery(Queries.SP2B_Q5,
+				getQueryName(SP2B_PREFIX, 8), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.SP2B_Q6,
+				getQueryName(SP2B_PREFIX, 9), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.SP2B_Q7,
+				getQueryName(SP2B_PREFIX, 10), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		//
+		executeQuery(Queries.SP2B_Q8,
+				getQueryName(SP2B_PREFIX, 11), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		//
+		executeQuery(Queries.SP2B_Q9,
+				getQueryName(SP2B_PREFIX, 12), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.SP2B_Q10,
+				getQueryName(SP2B_PREFIX, 13), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		//
+		executeQuery(Queries.SP2B_Q11,
+				getQueryName(SP2B_PREFIX, 14), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+	}
+	
+	private void evaluateLinkedData() throws Exception {
+		executeQuery(Queries.LINKED_DATA_1,
+				getQueryName(LINKED_DATA_PREFIX, 1), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.LINKED_DATA_2,
+				getQueryName(LINKED_DATA_PREFIX, 2), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.LINKED_DATA_3,
+				getQueryName(LINKED_DATA_PREFIX, 3), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.LINKED_DATA_4,
+				getQueryName(LINKED_DATA_PREFIX, 4), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.LINKED_DATA_5,
+				getQueryName(LINKED_DATA_PREFIX, 5), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.LINKED_DATA_6,
+				getQueryName(LINKED_DATA_PREFIX, 6), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.LINKED_DATA_7,
+				getQueryName(LINKED_DATA_PREFIX, 7), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.LINKED_DATA_8,
+				getQueryName(LINKED_DATA_PREFIX, 8), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.LINKED_DATA_9,
+				getQueryName(LINKED_DATA_PREFIX, 9), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+		executeQuery(Queries.LINKED_DATA_10,
+				getQueryName(LINKED_DATA_PREFIX, 10), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+		
+		executeQuery(Queries.LINKED_DATA_11,
+				getQueryName(LINKED_DATA_PREFIX, 11), CACHE_ASK_QUERIES,
+				QUERY_EVALUATION_COUNT);
+
+	}
 
 	public String getQueryName(String queryPrefix, int queryNo) {
 		return queryPrefix + queryNo;
@@ -170,7 +281,7 @@ public class WoDQAEvaluation {
 			long executionStartTime = System.currentTimeMillis();
 			ResultSet res = wodqaEngine.executeSelect(federatedQuery);
 			// get the only resultset or parse it too
-			iterateOnResults(res, false);
+			iterateOnResults(res, true);
 			executionTime = System.currentTimeMillis() - executionStartTime;
 			executionTimes += executionTime + ", ";
 			logger.info(MessageFormat.format("Anaysis time: {0}", analysisTime));

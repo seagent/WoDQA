@@ -4,10 +4,10 @@ import java.text.MessageFormat;
 import java.util.List;
 import java.util.Vector;
 
-import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
-
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.rdf.model.Resource;
+
+import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
 
 public class RelevantDatasetsForTriple {
 

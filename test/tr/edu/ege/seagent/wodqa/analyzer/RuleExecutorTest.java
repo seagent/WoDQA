@@ -10,16 +10,6 @@ import java.util.Vector;
 import org.junit.Assert;
 import org.junit.Test;
 
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDOntologyVocabulary;
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
-import tr.edu.ege.seagent.wodqa.VOIDCreator;
-import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
-import tr.edu.ege.seagent.wodqa.exception.WrongVOIDEntityConstructionException;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantDatasetsForTriple;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RuleExecutor;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.ontology.OntModel;
@@ -27,6 +17,16 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
+
+import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
+import tr.edu.ege.seagent.wodqa.exception.WrongVOIDEntityConstructionException;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantDatasetsForTriple;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RuleExecutor;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDCreator;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDIndividualOntology;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDOntologyVocabulary;
 
 public class RuleExecutorTest {
 	private static final String LGDO_SPARQL_ENDPOINT = "http://linkedgeodata.org/sparql/";

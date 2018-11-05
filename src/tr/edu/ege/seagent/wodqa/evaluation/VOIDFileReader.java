@@ -1,6 +1,5 @@
 package tr.edu.ege.seagent.wodqa.evaluation;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
@@ -18,7 +17,8 @@ import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDIndividualOntology;
+
 
 public class VOIDFileReader {
 

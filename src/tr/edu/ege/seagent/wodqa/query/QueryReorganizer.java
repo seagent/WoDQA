@@ -9,13 +9,6 @@ import java.util.Vector;
 
 import org.apache.log4j.Logger;
 
-import tr.edu.ege.seagent.wodqa.QueryElementOperations;
-import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
-import tr.edu.ege.seagent.wodqa.exception.QueryHeaderException;
-import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
-import tr.edu.ege.seagent.wodqa.query.analyzer.QueryConstructorUtil;
-import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.query.Query;
@@ -29,6 +22,13 @@ import com.hp.hpl.jena.sparql.core.Var;
 import com.hp.hpl.jena.sparql.expr.Expr;
 import com.hp.hpl.jena.sparql.syntax.Element;
 import com.hp.hpl.jena.sparql.syntax.ElementFilter;
+
+import tr.edu.ege.seagent.wodqa.QueryElementOperations;
+import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
+import tr.edu.ege.seagent.wodqa.exception.QueryHeaderException;
+import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
+import tr.edu.ege.seagent.wodqa.query.analyzer.QueryConstructorUtil;
+import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
 
 /**
  * Reorganize query to execute in the new form. TODO : query organize edilirken

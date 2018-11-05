@@ -6,12 +6,12 @@ import java.util.Vector;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import tr.edu.ege.seagent.wodqa.query.analyzer.QueryConstructorUtil;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryFactory;
+
+import tr.edu.ege.seagent.wodqa.query.analyzer.QueryConstructorUtil;
 
 @Ignore
 public class QueryConstructorUtilTest {

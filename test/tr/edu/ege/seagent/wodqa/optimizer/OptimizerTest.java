@@ -9,14 +9,14 @@ import java.util.Vector;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.hp.hpl.jena.graph.Node;
+import com.hp.hpl.jena.graph.Triple;
+import com.hp.hpl.jena.query.Query;
+
 import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
 import tr.edu.ege.seagent.wodqa.query.optimizer.BGPOptimizer;
 import tr.edu.ege.seagent.wodqa.query.optimizer.TripleEndpointMatch;
 import tr.edu.ege.seagent.wodqa.query.optimizer.WodqaQueryOptimizer;
-
-import com.hp.hpl.jena.graph.Node;
-import com.hp.hpl.jena.graph.Triple;
-import com.hp.hpl.jena.query.Query;
 
 @Ignore
 public class OptimizerTest {

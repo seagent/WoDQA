@@ -3,17 +3,6 @@ package tr.edu.ege.seagent.wodqa.query;
 import java.util.List;
 import java.util.Vector;
 
-import query.UndefinedQueryTypeException;
-import query.UnsupportedNodeTypeException;
-
-import tr.edu.ege.seagent.boundarq.filterbound.QueryEngineFilter;
-import tr.edu.ege.seagent.dataset.crawler.VoidCrawler;
-import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
-import tr.edu.ege.seagent.wodqa.exception.QueryAnalyzerException;
-import tr.edu.ege.seagent.wodqa.exception.QueryHeaderException;
-import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
-import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
-
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -23,9 +12,17 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.sparql.core.DatasetImpl;
-import com.hp.hpl.jena.sparql.engine.QueryEngineBase;
 
 import core.Querier;
+import query.UndefinedQueryTypeException;
+import query.UnsupportedNodeTypeException;
+import tr.edu.ege.seagent.boundarq.filterbound.QueryEngineFilter;
+import tr.edu.ege.seagent.wodqa.exception.InactiveEndpointException;
+import tr.edu.ege.seagent.wodqa.exception.QueryAnalyzerException;
+import tr.edu.ege.seagent.wodqa.exception.QueryHeaderException;
+import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
+import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
+import tr.edu.ege.seagent.wodqa.voiddocument.VoidCrawler;
 
 public class WodqaEngine {
 

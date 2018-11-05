@@ -12,14 +12,6 @@ import java.util.Vector;
 import org.junit.Before;
 import org.junit.Test;
 
-import tr.edu.ege.seagent.wodqa.query.DeterminedTriple;
-import tr.edu.ege.seagent.wodqa.query.QueryReorganizer;
-import tr.edu.ege.seagent.wodqa.query.TripleGroup;
-import tr.edu.ege.seagent.wodqa.query.ValuedTriple;
-import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
-import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
-import util.QueryExampleVocabulary;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.ontology.OntModel;
@@ -34,6 +26,15 @@ import com.hp.hpl.jena.sparql.syntax.ElementService;
 import com.hp.hpl.jena.sparql.syntax.ElementUnion;
 import com.hp.hpl.jena.sparql.syntax.ElementVisitorBase;
 import com.hp.hpl.jena.sparql.syntax.ElementWalker;
+
+import tr.edu.ege.seagent.wodqa.query.DeterminedTriple;
+import tr.edu.ege.seagent.wodqa.query.QueryReorganizer;
+import tr.edu.ege.seagent.wodqa.query.TripleGroup;
+import tr.edu.ege.seagent.wodqa.query.ValuedTriple;
+import tr.edu.ege.seagent.wodqa.query.analyzer.QueryAnalyzer;
+import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDCreator;
+import util.QueryExampleVocabulary;
 
 public class QueryReorganizerTest extends AbstractWoDQAComponentsTest {
 

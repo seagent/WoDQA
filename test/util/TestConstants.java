@@ -1,9 +1,9 @@
 package util;
 
-import tr.edu.ege.seagent.wodqa.VOIDStoreConstants;
-
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
+
+import tr.edu.ege.seagent.wodqa.VOIDStoreConstants;
 
 public class TestConstants {
 

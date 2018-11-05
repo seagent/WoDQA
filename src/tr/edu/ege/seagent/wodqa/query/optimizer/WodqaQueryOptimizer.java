@@ -3,14 +3,14 @@ package tr.edu.ege.seagent.wodqa.query.optimizer;
 import java.util.List;
 import java.util.Vector;
 
-import tr.edu.ege.seagent.wodqa.query.analyzer.QueryConstructorUtil;
-import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
-
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.sparql.syntax.Element;
+
+import tr.edu.ege.seagent.wodqa.query.analyzer.QueryConstructorUtil;
+import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
 
 public class WodqaQueryOptimizer {
 

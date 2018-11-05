@@ -6,14 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
-import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDOntologyVocabulary;
-import tr.edu.ege.seagent.wodqa.QueryElementOperations;
-import tr.edu.ege.seagent.wodqa.exception.EmptyVoidModelException;
-import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
-import tr.edu.ege.seagent.wodqa.exception.WrongVOIDEntityConstructionException;
 
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
@@ -38,6 +31,12 @@ import com.hp.hpl.jena.sparql.syntax.ElementService;
 import com.hp.hpl.jena.sparql.syntax.ElementVisitorBase;
 import com.hp.hpl.jena.sparql.syntax.ElementWalker;
 import com.hp.hpl.jena.vocabulary.RDF;
+
+import tr.edu.ege.seagent.wodqa.QueryElementOperations;
+import tr.edu.ege.seagent.wodqa.exception.EmptyVoidModelException;
+import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
+import tr.edu.ege.seagent.wodqa.exception.WrongVOIDEntityConstructionException;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDOntologyVocabulary;
 
 /**
  * INFO: BestAnalyze yonteminde "UNION" yok. AllAnalyze yonteminde var.
@@ -108,7 +107,21 @@ public class QueryAnalyzer {
 
 	/**
 	 * Dataset list of the decider's analyzer. Every ontmodel includes
-	 * dataset(s) descriptions. For example one ontmodel includes one or more
+	 * dataset(s) descriptions. For example one ontmodel incl<!-- 		<dependency> -->
+<!-- 			<groupId>Seagent</groupId> -->
+<!-- 			<artifactId>void</artifactId> -->
+<!-- 			<version>0.0.1-20120504</version> -->
+<!-- 			<exclusions> -->
+<!-- 				<exclusion> -->
+<!-- 					<artifactId>arq</artifactId> -->
+<!-- 					<groupId>com.hp.hpl.jena</groupId> -->
+<!-- 				</exclusion> -->
+<!-- 				<exclusion> -->
+<!-- 					<artifactId>junit</artifactId> -->
+<!-- 					<groupId>junit</groupId> -->
+<!-- 				</exclusion> -->
+<!-- 			</exclusions> -->
+<!-- 		</dependency> -->udes one or more
 	 * dataset individuals about dbpedia descriptions, another about geodata
 	 * descriptions.
 	 */

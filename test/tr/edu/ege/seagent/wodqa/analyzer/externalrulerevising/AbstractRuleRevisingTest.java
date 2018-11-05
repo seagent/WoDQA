@@ -6,15 +6,6 @@ import static org.junit.Assert.assertTrue;
 import java.net.MalformedURLException;
 import java.util.List;
 
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDOntologyVocabulary;
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
-import tr.edu.ege.seagent.wodqa.VOIDCreator;
-import tr.edu.ege.seagent.wodqa.analyzer.RuleExecutorTest;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantDatasetsForTriple;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RuleExecutor;
-
 import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Literal;
@@ -22,6 +13,15 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
+
+import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import tr.edu.ege.seagent.wodqa.analyzer.RuleExecutorTest;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantDatasetsForTriple;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RuleExecutor;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDCreator;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDIndividualOntology;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDOntologyVocabulary;
 
 public class AbstractRuleRevisingTest extends RuleExecutorTest {
 

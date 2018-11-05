@@ -1,8 +1,8 @@
 package tr.edu.ege.seagent.wodqa.query.optimizer;
 
-import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
-
 import com.hp.hpl.jena.graph.Triple;
+
+import tr.edu.ege.seagent.wodqa.query.analyzer.VOIDPathSolution;
 
 public class TripleEndpointMatch {
 

@@ -1,10 +1,10 @@
 package util;
 
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
-import tr.edu.ege.seagent.wodqa.SocialDatasetsExampleVocabulary;
-
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
+
+import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import tr.edu.ege.seagent.wodqa.SocialDatasetsExampleVocabulary;
 
 public class QueryExampleVocabulary {
 

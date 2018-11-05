@@ -9,24 +9,23 @@ import java.util.Vector;
 
 import org.apache.log4j.Logger;
 
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
-import tr.edu.ege.seagent.wodqa.URISpaceFinder;
-import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
-import tr.edu.ege.seagent.wodqa.exception.WrongVOIDEntityConstructionException;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.query.ResultSetFactory;
 import com.hp.hpl.jena.query.ResultSetRewindable;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Resource;
+
+import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import tr.edu.ege.seagent.wodqa.URISpaceFinder;
+import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
+import tr.edu.ege.seagent.wodqa.exception.WrongVOIDEntityConstructionException;
 
 public class RuleExecutor {
 	/**

@@ -9,12 +9,12 @@ import java.util.Vector;
 
 import org.junit.Test;
 
+import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.rdf.model.ResourceFactory;
+
 import tr.edu.ege.seagent.wodqa.exception.VOIDDescriptionConsistencyException;
 import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantDatasetsForTriple;
 import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
-
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.ResourceFactory;
 
 public class RelevantDatasetsForTripleTest {
 

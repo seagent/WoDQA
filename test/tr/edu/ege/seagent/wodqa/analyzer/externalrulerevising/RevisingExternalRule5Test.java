@@ -9,17 +9,17 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
-import tr.edu.ege.seagent.wodqa.QueryVocabulary;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantDatasetsForTriple;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
-import tr.edu.ege.seagent.wodqa.query.analyzer.RuleExecutor;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.vocabulary.OWL;
+
+import tr.edu.ege.seagent.wodqa.QueryVocabulary;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantDatasetsForTriple;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RelevantType;
+import tr.edu.ege.seagent.wodqa.query.analyzer.RuleExecutor;
+import tr.edu.ege.seagent.wodqa.voiddocument.VOIDIndividualOntology;
 
 public class RevisingExternalRule5Test extends AbstractRuleRevisingTest {
 

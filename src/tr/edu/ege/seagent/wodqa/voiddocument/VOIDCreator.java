@@ -1,11 +1,8 @@
-package tr.edu.ege.seagent.wodqa;
+package tr.edu.ege.seagent.wodqa.voiddocument;
 
 import java.net.MalformedURLException;
 import java.util.List;
 import java.util.Vector;
-
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDIndividualOntology;
-import tr.edu.ege.seagent.dataset.vocabulary.VOIDOntologyVocabulary;
 
 import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntModel;
@@ -142,7 +139,9 @@ public class VOIDCreator {
 	 * @param exampleRsc
 	 */
 	public static void setExRscPropertyToAllIndv(OntModel datasetModel,
-			VOIDIndividualOntology indvOnt, Resource exampleRsc) {
+			VOIDIndividualOntology
+
+ indvOnt, Resource exampleRsc) {
 		List<Individual> datasetIndvList = getAllDatasetIndv(datasetModel);
 		for (Individual individual : datasetIndvList) {
 			indvOnt.setAllDatasetExampleResource(individual, exampleRsc);
